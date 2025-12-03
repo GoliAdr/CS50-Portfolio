@@ -1,0 +1,16 @@
+sort1 uses: bubble sort
+
+How do you know?: Fast on sorted10000.txt but slower than merge on large random input; early-exit helps only when already sorted
+
+
+
+sort2 uses: merge sort
+
+How do you know?: Dramatically faster on random50000.txt (~0.29 s), consistent with O.
+
+
+
+
+sort3 uses: selection sort
+
+How do you know?: Similar runtime on sorted10000.txt (~0.125 s) and reversed10000.txt (~0.129 s), matching selection’s order-insensitive.
