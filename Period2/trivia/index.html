@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+
+
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+            <div class="container">
+            <div class="section">
+
+
+
+
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+
+
+                           <h3>Which planet is known as the red Planet? </h3>
+
+                <button id="Earth">Earth</button>
+
+                <button id="Mars">Mars</button>
+
+                <button id="Venus">Venus</button>
+
+                <p id="mc-feedback"></p>
+            </div>
+    </div>
+
+
+
+
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+
+
+                        <h3>What is the Capital of France? </h3>
+
+                    <input id="capital_answer" type="text">
+
+                    <button id = "capital_submit">Submit</button>
+
+                    <p id= "fr-feedback"></p>
+
+
+
+            </div>
+        </div>
+
+
+
+
+    <script>
+           document.querySelector("#Earth").onclick = function() {
+           document.querySelector("#Earth").style.backgroundColor = "red"
+           document.querySelector("#Earth").innerText = "Wrong"
+
+         }
+
+           document.querySelector("#Mars").onclick = function() {
+           document.querySelector("#Mars").style.backgroundColor = "Green"
+           document.querySelector("#Mars").innerText = "Correct"
+         }
+           document.querySelector("#Venus").onclick = function() {
+           document.querySelector("#Venus").style.backgroundColor = "red"
+           document.querySelector("#Venus").innerText = "Wrong"
+
+         }
+
+           document.querySelector("#capital_submit").onclick = function() {
+           let text = document.querySelector("#capital_answer").value
+           let answer = text.toLowerCase();
+           if (answer === "paris"){
+           document.querySelector("#capital_answer").style.backgroundColor = "Green"
+           document.querySelector("#fr-feedback").innerText = "Correct"
+           }
+           else {
+           document.querySelector("#capital_answer").style.backgroundColor = "Red"
+           document.querySelector("#fr-feedback").innerText = "Incorrect"
+           }
+
+           
+         }
+    </script>
+    </body>
+</html>

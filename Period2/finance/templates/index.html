@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in positions %}
+                <tr>
+                    <td>{{ p.symbol }}</td>
+                    <td>{{ p.shares }}</td>
+                    <td>{{ p.price | usd }}</td>
+                    <td>{{ p.total | usd }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {% if cash %}
+        <p>Your cash: {{ cash | usd }}</p>
+    {% endif %}
+
+    <p><strong>
+        Total:
+        </strong>
+    {{ grand_total | usd }}
+    </p>
+
+{% endblock %}

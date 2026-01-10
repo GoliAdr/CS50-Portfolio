@@ -1,0 +1,62 @@
+/*Global page settings*/
+body {
+    background-color: #121212;   /* Dark mode background */
+    color: white;                /* Default text color */
+}
+
+
+/*Sidebar navigation menu*/
+.sidebar {
+    position: fixed;             /* Sidebar stays in place while scrolling */
+    left: 20px;                  /* Distance from the left edge */
+    top: 150px;                  /* Distance from the top */
+    font-size: 18px;             /* Text size for links */
+    list-style-type: disc;       /* Bullet points for sidebar items */
+}
+
+.sidebar li {
+    margin-bottom: 15px;         /* Space between sidebar items */
+}
+
+.sidebar a {
+    color: #80aaff;              /* Link color in sidebar (light blue) */
+}
+
+
+/*Main content offset (keeps content away from sidebar)*/
+.content {
+    margin-left: 230px;          /* Pushes content to the right of the sidebar */
+    padding: 20px;               /* Adds space around content */
+}
+
+
+/*Page header (top title area)*/
+.header {
+    text-align: center;          /* Centers the page title */
+    margin-top: 30px;            /* Spacing above the header */
+    margin-bottom: 20px;         /* Spacing below the header */
+}
+
+
+/*General text blocks*/
+.text {
+    font-size: 20px;             /* Default text size */
+    text-align: center;          /* Centers text content */
+    margin-bottom: 40px;         /* Space under text blocks */
+}
+
+
+/*Images used in content*/
+.content img {
+    display: block;              /* Centers image when margin:auto is used */
+    margin: 40px auto;           /* Space above and below + horizontal centering */
+    width: 500px;                /* Maximum image width */
+}
+
+
+/*Project list (Projects page)*/
+.Project-List {
+    font-size: 20px;             /* Text size of project entries */
+    text-align: center;          /* Centers the project list */
+    list-style-type: none;       /* Removes default bullet points */
+}

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block main %}
+  <form action="/sell" method="post">
+    <div class="mb-3">
+      <select name="symbol" class="form-control">
+        {% for p in positions %}
+          <option value="{{ p.symbol }}">{{ p.symbol }} ({{ p.total_shares }} shares)</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <input
+        name="shares"
+        class="form-control"
+        placeholder="Shares"
+        type="number"
+        min="1">
+    </div>
+
+    <button class="btn btn-primary" type="submit">
+      Sell
+    </button>
+  </form>
+{% endblock %}

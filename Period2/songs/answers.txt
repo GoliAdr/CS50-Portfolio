@@ -1,0 +1,13 @@
+"If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?"
+1) The average of 3 random values does not tell anything about the audio aura from the user and 100 songs are way too less for that too.
+It depends how often the user hears the song too andI do not really know how a song can be calculated in energy or danceability
+I think it is way too oversimplified because with this values the only thing you can say is "The user listens to music".
+
+
+"Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener.
+What better ways of calculating this aura would you propose?"
+
+2) Genres have always different energys so melancholic music can have a lot of energy but could be calculated with a low energy or Danceability Value.
+You should considere the genre too and how often this song was listened too.
+Was it a 2 week phase were the user listend to the song or did the user here it the whole year in different time periods.
+There could be a few extreme songs that could distort the values
